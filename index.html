@@ -129,8 +129,8 @@
 							<div class="content">
 								<h2>Reversi</h2>
 								<p>
-									This is a game where the users objective is to have the most squares occupied by white circles
-									at the end of the game.  A move is only valid if the 
+									This is one of my earlier games where the users objective is to have the most 
+									squares occupied by white circles at the end of the game.  A move is only valid if the 
 									unoccupied square is horizontal, vertical, or diagnal of another square occupied by your
 									circle, all squares between the desired move and an existing occupied square of yours must
 									be occupied by your opponent (the computer).  When a valid move is made, all of your opponents
@@ -144,18 +144,25 @@
 						</section>
 						<section class="spotlight">
 							<div class="image">
-								<img class="mySlides5" src="images/Reversi/R_1.pn">
-								<img class="mySlides5" src="images/Reversi/R_2.pn">
-								<img class="mySlides5" src="images/Reversi/R_3.pn">
-								<img class="mySlides5" src="images/Reversi/R_4.pn">
-								<img class="mySlides5" src="images/Reversi/R_5.pn">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_1.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_2.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_3.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_4.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_5.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_6.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_7.png">
+								<img class="mySlides5" src="images/Pineapples Gallore/PG_8.png">
 							</div>
 							<div class="content">
-								<h2>Pineapples</h2>
+								<h2>Pineapples Galore (Still in progress)</h2>
 								<p>
-									
+									This is a SPOOF website I designed entirely about pineapples!  It's a website I use to
+									practice new web design tools, features, tricks, and practices.  Inside you'll find various
+									APIs, games, factoids, and more all relating to pineapples in some way or not...lol
 								</p>
-								<p>Features: HTML5, CSS, Javascript, Event Handlers</p>
+								<p>Features: HTML5, CSS, Javascript, JQuery, Responsive Web Design (Flexbox & CSS Grid), 
+									Event Handlers, Media Queries, and more
+								</p>
 
 								<p><a href="https://www.linkedin.com/in/germaine-robinson-fort-wayne/" class="button primary">View Code</a></p>
 							</div>
@@ -214,10 +221,12 @@
 				var slideIndex2 = 0;
 				var slideIndex3 = 0;
 				var slideIndex4 = 0;
+				var slideIndex5 = 0;
 				SlideShow_1();
 				SlideShow_2();
 				SlideShow_3();
 				SlideShow_4();
+				SlideShow_5();
 
 				// slideshow 1
 				function SlideShow_1() {
@@ -269,6 +278,19 @@
 				if (slideIndex4 > x.length) {slideIndex4 = 1}
 				x[slideIndex4-1].style.display = "block";
 				setTimeout(SlideShow_4, 3000); // Change image every 2 seconds
+				}
+
+				// slideshow 5
+				function SlideShow_5() {
+				var i;
+				var x = document.getElementsByClassName("mySlides5");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				slideIndex5++;
+				if (slideIndex5 > x.length) {slideIndex5 = 1}
+				x[slideIndex5-1].style.display = "block";
+				setTimeout(SlideShow_5, 3000); // Change image every 2 seconds
 				}
 			</script>
 
